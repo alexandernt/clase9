@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main" id="main">
+        <section class="formSec" id="formSec">
+            <form action="/" METHOD="POST" class="register__form grid">
+                <div class="register__contentName flex">
+                    <div class="register__name">
+                        <label class="register__label" for="">Name*</label>
+                        <input required="required" class="register__input regName" type="text"  placeholder="Name">
+                    </div>
+                    <div class="register__lastName">
+                        <label class="register__label" for="">Last Name*</label>
+                        <input required="required" class="register__input regLastName" type="text"  placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="register__email">
+                    <label for="" class="register__label">Email*</label>
+                    <input required="required" class="register__input regEmail" type="email"  placeholder="Email">
+                </div>
+                <div class="register__user-date" >
+                    <div class="register__user">
+                        <label for="" class="register__label">User*</label>
+                        <input class="register__input regUser" type="text" required placeholder="User">
+                    </div>
+                    <div class="register__date">
+                        <label class="register__label" for="">Birthday*</label>
+                        <input required="required" class="register__input regDate" type="date">
+                    </div>
+                    
+                </div>
+                <div class="register__password flex">
+                    <div class="reg__pw">
+                        <label for="" class="register__label">Password*</label>
+                        <input required="required" class="register__input regPw" type="password" placeholder="Password">
+                    </div>
+                    <div class="reg__pw">
+                        <label for="" class="register__label">Repeat Password*</label>
+                        <input required="required" class="register__input regConfPw" type="password" placeholder="Repeat Passwrod">
+                    </div>
+                </div>
+                <div class="register__checkbox">
+                    <label>
+                        <input required="required" type="checkbox" id="cbox1" value="first_checkbox" class="regCheck"> * I certify that I am 18 years of age or older, and I agree to the <a href="">terms and conditions</a></label><br>
+
+                </div>
+                <div class="register__btn">
+                    <button class="btn regBtn" type="submit">Register</button>
+                </div>
+            </form>
+        </section>
+        <div class="formError" id="formError"></div>
+    </main>
+    <script src="/main.js"></script>
+</body>
+</html>
